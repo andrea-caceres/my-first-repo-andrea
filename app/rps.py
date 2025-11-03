@@ -45,3 +45,4 @@ elif u == "scissors" and c == "paper":
     print("USER WINS")
 elif u == "scissors" and c == "scissors":
     print("TIE GAME")
+print("TODO:", "DETERMINE WINNER")
