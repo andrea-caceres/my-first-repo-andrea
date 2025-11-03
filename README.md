@@ -42,3 +42,10 @@ Game of rock, paper, scissors:
 
 ```sh
 python app/rps.py
+
+
+Run tests:
+
+```sh
+pytest
+```
