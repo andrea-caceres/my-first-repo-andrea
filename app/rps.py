@@ -1,32 +1,4 @@
 import random
-<<<<<<< Updated upstream
-valid_choices = ["rock", "paper", "scissors"]
-user_choice = input("please choose an option ('rock', 'paper', or 'scissors'):").strip().lower()
-
-#input validation
-while user_choice not in valid_choices:
-    print("Invalid choice. Please enter 'rock', 'paper', or 'scissors'.")
-    user_choice = input("Please choose an option ('rock', 'paper', or 'scissors'): ").strip().lower()
-
-print(f"Option chosen: '{user_choice}'")
-
-#computer choice
-computer_choice = random.choice(valid_choices)
-print(f"Computer choice: '{computer_choice}'")
-
-#game
-if user_choice == computer_choice:
-    result = "It's a tie! Try again"
-elif (user_choice == "rock" and computer_choice == "scissors") or \
-     (user_choice == "paper" and computer_choice == "rock") or \
-     (user_choice == "scissors" and computer_choice == "paper"):
-    result = f"You win! "
-else:
-    result = "Computer wins!"
-
-print(result)
-print("Thanks for playing.")
-=======
 
 
 VALID_OPTIONS = ["rock", "paper", "scissors"]
@@ -50,5 +22,26 @@ print("COMP:", computer_choice)
 
 # DETERMINE THE WINNER
 
-print("TODO:", "DETERMINE WINNER")
->>>>>>> Stashed changes
+# quick alias to facilitate some copy and pasting
+# we will soon move this into a function anyway
+u = user_choice
+c = computer_choice
+
+if u == "rock" and c == "rock":
+    print("TIE GAME")
+elif u == "rock" and c == "paper":
+    print("COMPUTER WINS")
+elif u == "rock" and c == "scissors":
+    print("USER WINS")
+elif u == "paper" and c == "rock":
+    print("COMPUTER WINS") # OOPS
+elif u == "paper" and c == "paper":
+    print("TIE GAME")
+elif u == "paper" and c == "scissors":
+    print("USER WINS") # OOPS
+elif u == "scissors" and c == "rock":
+    print("COMPUTER WINS")
+elif u == "scissors" and c == "paper":
+    print("USER WINS")
+elif u == "scissors" and c == "scissors":
+    print("TIE GAME")
