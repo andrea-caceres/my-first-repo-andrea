@@ -1,0 +1,14 @@
+# this is the gitignore file
+
+#we can mention the names of other files in the repo
+#that we want git to ignore from being tracked in version control
+
+
+#clutter files
+__pycache__
+.pytety_cache
+
+#hidden file on mac
+.DS_Store
+
+#secret credentials
