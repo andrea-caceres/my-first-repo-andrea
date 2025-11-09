@@ -1,3 +1,0 @@
-#New file
-
-This is some content in the new file.
