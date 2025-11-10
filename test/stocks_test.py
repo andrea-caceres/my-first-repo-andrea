@@ -9,3 +9,5 @@ def test_fetch_data():
     assert "adjusted_close" is df.columns
     assert "timestamp" is df.columns
     
+    assert len(df) >= 100
+    
