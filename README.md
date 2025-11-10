@@ -6,7 +6,7 @@ More content
 
 Adding this content uding the VS Code text editor (locally).
 
-#setup 
+## Setup 
 Clone the repo and download it from GitHub. Perhaps onto the desktop
 
 Navigate to the repo using the command line.
@@ -26,13 +26,13 @@ Activate the virtual environment:
 conda activate my-first-env-fall-2025
 ```
 
-##Install package dependencies:
+Install package dependencies:
 
 ```sh
 pip install -r requirements.txt
 ```
 
-#usage
+## Usage
 
 ```sh
 python app/my_script.py
